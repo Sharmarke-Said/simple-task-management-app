@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li span {
+  flex-grow: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+li button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #ff1a1a;
+}
+
+form.add-task-form {
+  display: flex;
+  margin: 20px 0;
+}
+
+form.add-task-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  margin-right: 10px;
+}
+
+form.add-task-form .add-button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+form.add-task-form .add-button:hover {
+  background-color: #218838;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button.toggle-add-task {
+  width: 48%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.toggle-add-task:hover {
+  background-color: #0056b3;
+}
+
+button.clear-tasks {
+  width: 48%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.clear-tasks:hover {
+  background-color: #ff1a1a;
+}
